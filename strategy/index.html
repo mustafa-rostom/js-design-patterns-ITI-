@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strategy design pattern</title>
+    <script src="payment.js"></script>
+    <script src="pay.js"></script>
+    <script src="wife.js"></script>
+    <script src="husband_credit.js"></script>
+    <script src="husband_debit.js"></script>
+</head>
+
+<body>
+    <script>
+        let wife = new Wife(new WifeIsHere());
+        wife.Display();
+
+        let husband_debit = new HusbandDebit(new WifeIsHere());
+        husband_debit.pay();
+        husband_debit.Display();
+
+        let husband_credit = new HusbandCredit(new WifeIsNotHere());
+        husband_credit.pay();
+        husband_credit.Display();
+    </script>
+</body>
+
+</body>
+
+</html>
