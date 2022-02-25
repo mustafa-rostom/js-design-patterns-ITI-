@@ -1,2 +1,2 @@
 # js-design-patterns-ITI-
-ITI tasks for js design patterns course 
+ITI tasks for the js design patterns course 
